@@ -1,0 +1,31 @@
+﻿@model Lab01.Models.Student
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <div>
+            @Html.LabelFor(model => model.StudentId)
+            @Html.EditorFor(model => model.StudentId)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.StudentName)
+            @Html.EditorFor(model => model.StudentName)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Address)
+            @Html.EditorFor(model => model.Address)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Email)
+            @Html.EditorFor(model => model.Email)
+        </div>
+        <div>
+
+            <input class="btn btn-default" type="submit" name="btnCreate" value="Create" />
+        </div>
+    </div>
+}

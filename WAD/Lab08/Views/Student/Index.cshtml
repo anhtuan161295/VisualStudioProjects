@@ -1,0 +1,93 @@
+﻿@*@model IEnumerable<Lab08.Models.Student>*@
+@using DynamicJson.Extensions
+
+@{
+    var res = ((string)Model).JsDeserialize();
+
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            StudentName
+            @*@Html.DisplayNameFor(model => model.StudentName)*@
+        </th>
+        <th>
+            Address
+            @*@Html.DisplayNameFor(model => model.Address)*@
+        </th>
+        <th>
+            Email
+            @*@Html.DisplayNameFor(model => model.Email)*@
+        </th>
+        @*@Html.DisplayNameFor(model => model.CourseId)*@
+        <th>
+
+            Course Name
+        </th>
+        <th>
+            Duration
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in res)
+    {
+        <tr>
+            <td>
+                @item.StudentName
+                @*@Html.DisplayFor(modelItem => item.StudentName)*@
+            </td>
+            <td>
+                @item.Address
+                @*@Html.DisplayFor(modelItem => item.Address)*@
+            </td>
+            <td>
+                @item.Email
+                @*@Html.DisplayFor(modelItem => item.Email)*@
+            </td>
+
+            @*@Html.HiddenFor(modelItem => item.CourseId)*@
+
+            <td>
+                @item.CourseName
+                @*@course.CourseName*@
+            </td>
+            <td>
+                @item.Duration
+                @*@course.Duration*@
+            </td>
+            @{
+
+                @*foreach (var course in ViewBag.CourseInfo as IEnumerable<Course>)
+                    {
+                        if (@item.CourseId == course.CourseId)
+                        {
+                            <td>
+                                @course.CourseName
+                            </td>
+                            <td>
+                                @course.Duration
+                            </td>
+                        }
+                    }*@
+
+            }
+
+            <td>
+                @Html.ActionLink("Edit Or Delete", "EditOrDelete", new { id = item.StudentId })
+                @*@Html.ActionLink("Details", "Details", new { id = item.StudentId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })*@
+            </td>
+        </tr>
+                }
+</table>

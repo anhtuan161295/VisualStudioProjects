@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Lab01.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="85" Margin="0,58,0,0" VerticalAlignment="Top" Width="563">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock x:Name="lblPageTitle" TextWrapping="Wrap" Text="Background Task Demo" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" />
+        </Border>
+        <TextBlock x:Name="lblTitle" HorizontalAlignment="Left" Margin="114,256,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" FontSize="24" />
+        <TextBox HorizontalAlignment="Left" Margin="288,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.515,0.538" Width="268" Padding="0" />
+        <TextBlock x:Name="lblGenre" HorizontalAlignment="Left" Margin="114,297,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top" FontSize="24" />
+        <TextBox HorizontalAlignment="Left" Margin="288,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.515,0.538" Width="268" Padding="0" />
+        <TextBlock x:Name="lblYear" HorizontalAlignment="Left" Margin="114,338,0,0" TextWrapping="Wrap" Text="YearOfRelease" VerticalAlignment="Top" FontSize="24" />
+        <TextBox HorizontalAlignment="Left" Margin="288,331,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.515,0.538" Width="268" Padding="0" />
+        <TextBlock x:Name="lblPrice" HorizontalAlignment="Left" Margin="114,379,0,0" TextWrapping="Wrap" Text="Unit Price" VerticalAlignment="Top" FontSize="24" />
+        <TextBox HorizontalAlignment="Left" Margin="288,372,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.515,0.538" Width="268" Padding="0" />
+        <GridView HorizontalAlignment="Left" Height="288" Margin="691,276,0,0" VerticalAlignment="Top" Width="467">
+            <GridView.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="#FFBF5A5A" Offset="1" />
+                </LinearGradientBrush>
+            </GridView.Background>
+        </GridView>
+        <TextBlock x:Name="lblLanguage" HorizontalAlignment="Left" Margin="695,216,0,0" TextWrapping="Wrap" Text="Language" VerticalAlignment="Top" FontSize="24" />
+        <ComboBox x:Name="cbLanguage" HorizontalAlignment="Left" Margin="854,213,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.515,0.538" Width="268" Padding="0" SelectionChanged="cbLanguage_SelectionChanged">
+            <x:String>English</x:String>
+            <x:String>Vietnamese</x:String>
+            <!--<ComboBoxItem Name="en" Content="English" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Name="vi" Content="Vietnamese"></ComboBoxItem>-->
+        </ComboBox>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Height="73" Margin="226,442,0,0" VerticalAlignment="Top" Width="236" FontSize="24" Click="btnCreate_Click" />
+    </Grid>
+</Page>

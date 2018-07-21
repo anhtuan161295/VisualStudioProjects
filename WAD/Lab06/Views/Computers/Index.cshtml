@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Lab06.Models.Computer>
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/scripts/jquery-3.1.0.min.js"></script>
+
+<b>Visitor number: @Session["visitor"]</b>
+
+<h2>Index</h2>
+<style>
+    .table {
+        width: 80%;
+    }
+</style>
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Search by Price</label>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">From</label>
+
+            <div class="col-md-10">
+                <input type="text" name="numFrom" id="numFrom" class="form-control" />
+                @*@Html.ValidationMessage("fromError", new { @class = "text-danger" })*@
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">To</label>
+
+            <div class="col-md-10">
+                <input type="text" name="numTo" id="numTo" class="form-control" />
+                @*@Html.ValidationMessage("toError", new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Filter" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="table">
+
+    @foreach (var item in Model)
+    {
+        <div>
+            <div class="col-md-10" style="padding: 10px">
+                @*@Html.DisplayFor(modelItem => item.Photo)*@
+                <img src="@item.Photo" width="120" height="120" />
+            </div>
+            <div class="col-md-8" style="padding: 10px">
+                @Html.DisplayFor(modelItem => item.ComputerName)
+
+                @Html.DisplayFor(modelItem => item.Price)
+
+                @Html.ActionLink("Details", "Details", "Computers", new { id = item.Id }, new { @class = "btn btn-default" })
+
+                <button id="btnModalDetails" data-toggle="modal" data-target="#@item.Id" class="btn btn-primary">Details</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="@item.Id" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel3" aria-hidden="true">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel1">Computer Details</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <dl class="dl-horizontal">
+                            <dt>
+                                Id:
+                            </dt>
+
+                            <dd>
+                                @item.Id
+                            </dd>
+
+                            <dt>
+                                Computer Name:
+                            </dt>
+
+                            <dd>
+                                @item.ComputerName
+                            </dd>
+
+                            <dt>
+                                Description
+                            </dt>
+
+                            <dd>
+                                @item.Description
+                            </dd>
+
+                            <dt>
+                                Price
+                            </dt>
+
+                            <dd>
+                                @item.Price
+                            </dd>
+
+                            <dt>
+                                Photo
+                            </dt>
+
+                            <dd>
+                                @*@item.Photo*@
+                                <img src="@item.Photo" width="100" height="100" />
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        @* <button type="button" class="btn btn-primary">Save changes</button>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

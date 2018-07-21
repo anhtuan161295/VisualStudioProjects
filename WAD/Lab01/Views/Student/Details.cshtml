@@ -1,0 +1,28 @@
+﻿@model  Lab01.Models.Student
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="dl-horizontal">
+    <div>
+        @Html.DisplayNameFor(model => model.StudentId) :
+        @Html.DisplayFor(model => model.StudentId)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.StudentName) :
+        @Html.DisplayFor(model => model.StudentName)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Address) :
+        @Html.DisplayFor(model => model.Address)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Email) :
+        @Html.DisplayFor(model => model.Email)
+    </div>
+    <div>
+        @Html.ActionLink("Back to List", "Index", "Student")
+    </div>
+</div>

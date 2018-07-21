@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Module03.FlowData"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Module03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="152,84,0,0" TextWrapping="Wrap" Text="OneWay and TwoWay" VerticalAlignment="Top" Height="49" Width="281" FontSize="22"/>
+        <TextBox Text="{Binding ElementName=ListBox, Path=SelectedItem.Content, Mode=TwoWay}" Background="{Binding ElementName=ListBox, Path=SelectedItem.Content, Mode=OneWay}" HorizontalAlignment="Left" Margin="152,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="202"/>
+        <ListBox Name="ListBox" HorizontalAlignment="Left" Height="142" Margin="152,270,0,0" VerticalAlignment="Top" Width="354" FontSize="18">
+            <ListBoxItem>Red</ListBoxItem>
+            <ListBoxItem Content="Green"/>
+        </ListBox>
+        <TextBlock HorizontalAlignment="Left" Margin="734,70,0,0" TextWrapping="Wrap" Text="OneWay" VerticalAlignment="Top" Height="82" Width="308" FontSize="36"/>
+        <Slider Name="Slider" HorizontalAlignment="Left" Margin="734,225,0,0" VerticalAlignment="Top" Width="331" Height="63" Minimum="1" Value="50" Foreground="#FF38F026"/>
+        <TextBox Text="{Binding ElementName=Slider, Path=Value}" HorizontalAlignment="Left" Margin="1031,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="135" FontSize="24"/>
+        <Image  HorizontalAlignment="Left" Height="{Binding ElementName=Slider, Path=Value, Mode=OneTime}" Margin="705,288,0,0" VerticalAlignment="Top" Width="{Binding ElementName=Slider, Path=Value, Mode=OneTime}" Source="Assets/t1.PNG" RenderTransformOrigin="0.531,0.882"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Ass13MVCWebRole.Models.NoteBook>
+
+@{
+    ViewBag.Title = "Result";
+    Layout = null;
+}
+
+<h2 style="color: royalblue">Result</h2>
+
+<table class="table" border="1">
+    <tr>
+        <th align="center" style="width: 200px">
+            @Html.DisplayNameFor(model => model.NoteBookId)
+        </th>
+        <th align="center" style="width: 200px">
+            @Html.DisplayNameFor(model => model.NoteBookTitle)
+        </th>
+        <th align="center" style="width: 200px">
+            @Html.DisplayNameFor(model => model.NoteBookPrice)
+        </th>
+        <th align="center" style="width: 200px">
+            @Html.DisplayNameFor(model => model.Wifi)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoteBookId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoteBookTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoteBookPrice)
+            </td>
+            <td>
+                @Html.CheckBoxFor(modelItem => item.Wifi)
+                @* @Html.DisplayFor(modelItem => item.Wifi)*@
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.NoteBookId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.NoteBookId }) |*@
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.NoteBookId }, new { onclick = "return confirm('Are you sure you want to delete this notebook?')" })*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.NoteBookId })
+            </td>
+        </tr>
+    }
+</table>
+<br />
+@Html.ActionLink("Back to Search Page", "Search")

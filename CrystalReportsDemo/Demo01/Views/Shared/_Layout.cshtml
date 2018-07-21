@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand active" })
+
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li>@Html.ActionLink("Item", "Index", "Items", new { area = "" }, new { @class = "navbar-brand" })</li>
+                    <li>@Html.ActionLink("Customer", "Index", "Customers", new { area = "" }, new { @class = "navbar-brand" })</li>
+                    @*<li>@Html.ActionLink("Register", "IndexItem", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+                        <li>@Html.ActionLink("Login", "IndexCustomer", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="nav navbar-fixed-bottom navbar-inverse">
+            <p align="center" style="color: white">
+                &copy; @DateTime.Now.Year - My ASP.NET Application
+                <br />
+                <a href="http://facebook.com"><img src="~/Images/facebook.png" width="25" height="25" /></a>
+                <a href="http://flickr.com"><img src="~/Images/flickr.png" width="25" height="25" /></a>
+                <a href="http://plus.google.com"><img src="~/Images/googleplus.png" width="25" height="25" /></a>
+                <a href="http://twitter.com"><img src="~/Images/twitter.png" width="25" height="25" /></a>
+            </p>
+            <div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

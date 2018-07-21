@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3039/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3039/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:3039/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Lab04WCFService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_SendMoney_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMoney" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendMoney_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMoneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAccountList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAccountList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Deposit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Deposit" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Deposit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DepositResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Withdraw_InputMessage">
+    <wsdl:part name="parameters" element="tns:Withdraw" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Withdraw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WithdrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPublishers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPublishers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPublisher_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPublisher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPublisher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPublisherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:addBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateBookResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="SendMoney">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendMoney" message="tns:IService1_SendMoney_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendMoneyResponse" message="tns:IService1_SendMoney_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAccountList" message="tns:IService1_GetAccountList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAccountListResponse" message="tns:IService1_GetAccountList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Deposit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Deposit" message="tns:IService1_Deposit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DepositResponse" message="tns:IService1_Deposit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Withdraw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Withdraw" message="tns:IService1_Withdraw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WithdrawResponse" message="tns:IService1_Withdraw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBookList" message="tns:IService1_GetBookList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBookListResponse" message="tns:IService1_GetBookList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPublishers" message="tns:IService1_GetPublishers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPublishersResponse" message="tns:IService1_GetPublishers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBookById" message="tns:IService1_GetBookById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBookByIdResponse" message="tns:IService1_GetBookById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addPublisher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addPublisher" message="tns:IService1_addPublisher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addPublisherResponse" message="tns:IService1_addPublisher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addBook" message="tns:IService1_addBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addBookResponse" message="tns:IService1_addBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateBook" message="tns:IService1_updateBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateBookResponse" message="tns:IService1_updateBook_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendMoney">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendMoney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountList">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAccountList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deposit">
+      <soap:operation soapAction="http://tempuri.org/IService1/Deposit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Withdraw">
+      <soap:operation soapAction="http://tempuri.org/IService1/Withdraw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookList">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBookList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishers">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPublishers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBookById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPublisher">
+      <soap:operation soapAction="http://tempuri.org/IService1/addPublisher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/addBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:3039/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

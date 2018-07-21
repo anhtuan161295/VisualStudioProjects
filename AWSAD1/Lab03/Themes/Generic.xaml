@@ -1,0 +1,26 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab03">
+
+    <Style TargetType="local:ImageListCustomControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ImageListCustomControl">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+
+                        <FlipView Width="450" Height="450">
+                            <Image Source="Assets/1.png" Width="450" Height="450" Stretch="Fill" ></Image>
+                            <Image Source="Assets/2.png" Width="450" Height="450" Stretch="Fill" ></Image>
+                            <Image Source="Assets/3.png" Width="450" Height="450" Stretch="Fill" ></Image>
+                            <Image Source="Assets/4.png" Width="450" Height="450" Stretch="Fill" ></Image>
+                        </FlipView>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

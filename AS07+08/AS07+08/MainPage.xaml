@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="AS07_08.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AS07_08"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar Background="Olive">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto" ></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnCreate" Grid.Column="0" Content="Create" HorizontalAlignment="Center" Click="btnCreate_Click"></Button>
+                <Button x:Name="btnView" Grid.Column="1" Content="View" HorizontalAlignment="Center" Click="btnView_Click"></Button>
+                <Button x:Name="btnSave" Grid.Column="2" Content="Save" HorizontalAlignment="Center" Click="btnSave_Click"></Button>
+                <Button x:Name="btnExit" Grid.Column="3" Content="Exit" HorizontalAlignment="Right" Margin="0" Click="btnExit_Click" />
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top" Height="619" Width="1346" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" />
+    </Grid>
+</Page>

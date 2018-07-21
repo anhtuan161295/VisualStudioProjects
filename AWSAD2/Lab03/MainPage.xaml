@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Lab03.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <AppBar>
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="btnLogin" Content="Login" FontSize="24" Height="60" Width="129" Click="btnLogin_Click"></Button>
+                </StackPanel>
+                <Button Name="btnClose" Content="Close" FontSize="24" Height="60" Width="129" HorizontalAlignment="Right" Click="btnClose_Click"></Button>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Frame Name="frame" Content="" HorizontalAlignment="Center" Height="682" Margin="0" VerticalAlignment="Center" Width="1269" />
+    </Grid>
+</Page>

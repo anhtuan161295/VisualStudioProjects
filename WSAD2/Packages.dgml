@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Lab04WSCallWebAPI" Label="Lab04WSCallWebAPI" Category="Project" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 5.2.3" Label="Microsoft.AspNet.WebApi.Client 5.2.3" Category="Package" />
+    <Node Id="Microsoft.Bcl 1.1.9" Label="Microsoft.Bcl 1.1.9" Category="Package" />
+    <Node Id="Microsoft.Bcl.Build 1.0.14" Label="Microsoft.Bcl.Build 1.0.14" Category="Package" />
+    <Node Id="Microsoft.CSharp 4.0.1" Label="Microsoft.CSharp 4.0.1" Category="Package" />
+    <Node Id="Microsoft.Net.Http 2.2.22" Label="Microsoft.Net.Http 2.2.22" Category="Package" />
+    <Node Id="Newtonsoft.Json 9.0.1" Label="Newtonsoft.Json 9.0.1" Category="Package" />
+    <Node Id="System.Collections 4.0.11" Label="System.Collections 4.0.11" Category="Package" />
+    <Node Id="System.Diagnostics.Debug 4.0.11" Label="System.Diagnostics.Debug 4.0.11" Category="Package" />
+    <Node Id="System.Dynamic.Runtime 4.0.11" Label="System.Dynamic.Runtime 4.0.11" Category="Package" />
+    <Node Id="System.Globalization 4.0.11" Label="System.Globalization 4.0.11" Category="Package" />
+    <Node Id="System.IO 4.1.0" Label="System.IO 4.1.0" Category="Package" />
+    <Node Id="System.Linq 4.1.0" Label="System.Linq 4.1.0" Category="Package" />
+    <Node Id="System.Linq.Expressions 4.1.0" Label="System.Linq.Expressions 4.1.0" Category="Package" />
+    <Node Id="System.ObjectModel 4.0.12" Label="System.ObjectModel 4.0.12" Category="Package" />
+    <Node Id="System.Reflection 4.1.0" Label="System.Reflection 4.1.0" Category="Package" />
+    <Node Id="System.Reflection.Extensions 4.0.1" Label="System.Reflection.Extensions 4.0.1" Category="Package" />
+    <Node Id="System.Resources.ResourceManager 4.0.1" Label="System.Resources.ResourceManager 4.0.1" Category="Package" />
+    <Node Id="System.Runtime 4.1.0" Label="System.Runtime 4.1.0" Category="Package" />
+    <Node Id="System.Runtime.Extensions 4.1.0" Label="System.Runtime.Extensions 4.1.0" Category="Package" />
+    <Node Id="System.Runtime.Serialization.Primitives 4.1.1" Label="System.Runtime.Serialization.Primitives 4.1.1" Category="Package" />
+    <Node Id="System.Text.Encoding 4.0.11" Label="System.Text.Encoding 4.0.11" Category="Package" />
+    <Node Id="System.Text.Encoding.Extensions 4.0.11" Label="System.Text.Encoding.Extensions 4.0.11" Category="Package" />
+    <Node Id="System.Text.RegularExpressions 4.1.0" Label="System.Text.RegularExpressions 4.1.0" Category="Package" />
+    <Node Id="System.Threading 4.0.11" Label="System.Threading 4.0.11" Category="Package" />
+    <Node Id="System.Threading.Tasks 4.0.11" Label="System.Threading.Tasks 4.0.11" Category="Package" />
+    <Node Id="System.Xml.ReaderWriter 4.0.11" Label="System.Xml.ReaderWriter 4.0.11" Category="Package" />
+    <Node Id="System.Xml.XDocument 4.0.11" Label="System.Xml.XDocument 4.0.11" Category="Package" />
+    <Node Id="Lab04WebAPIServices" Label="Lab04WebAPIServices" Category="Project" />
+    <Node Id="Microsoft.AspNet.WebApi 5.0.0" Label="Microsoft.AspNet.WebApi 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 5.0.0" Label="Microsoft.AspNet.WebApi.Client 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 5.0.0" Label="Microsoft.AspNet.WebApi.Core 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 5.0.0" Label="Microsoft.AspNet.WebApi.WebHost 5.0.0" Category="Package" />
+    <Node Id="Newtonsoft.Json 5.0.6" Label="Newtonsoft.Json 5.0.6" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="Microsoft.AspNet.WebApi.Client 5.2.3" Target="Newtonsoft.Json 9.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 5.2.3" Target="Newtonsoft.Json 9.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 5.2.3" Target="Microsoft.Net.Http 2.2.22" Category="Package Dependency" />
+    <Link Source="Microsoft.Bcl 1.1.9" Target="Microsoft.Bcl.Build 1.0.14" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Dynamic.Runtime 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Reflection.Extensions 4.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Dynamic.Runtime 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Dynamic.Runtime 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Reflection.Extensions 4.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="Microsoft.CSharp 4.0.1" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="Microsoft.Net.Http 2.2.22" Target="Microsoft.Bcl 1.1.9" Category="Package Dependency" />
+    <Link Source="Microsoft.Net.Http 2.2.22" Target="Microsoft.Bcl.Build 1.0.14" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="Microsoft.CSharp 4.0.1" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Dynamic.Runtime 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Reflection.Extensions 4.0.1" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Runtime.Serialization.Primitives 4.1.1" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Text.Encoding.Extensions 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Text.RegularExpressions 4.1.0" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Xml.ReaderWriter 4.0.11" Category="Package Dependency" />
+    <Link Source="Newtonsoft.Json 9.0.1" Target="System.Xml.XDocument 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Collections 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Collections 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Collections 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Diagnostics.Debug 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Diagnostics.Debug 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Diagnostics.Debug 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Linq.Expressions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Dynamic.Runtime 4.0.11" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Globalization 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Globalization 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Globalization 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.IO 4.1.0" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq 4.1.0" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Reflection.Extensions 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Linq 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.ObjectModel 4.0.12" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Reflection.Extensions 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Linq.Expressions 4.1.0" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.ObjectModel 4.0.12" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection.Extensions 4.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection.Extensions 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection.Extensions 4.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Reflection.Extensions 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Resources.ResourceManager 4.0.1" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Resources.ResourceManager 4.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Resources.ResourceManager 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Resources.ResourceManager 4.0.1" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Resources.ResourceManager 4.0.1" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Resources.ResourceManager 4.0.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Extensions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Extensions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Extensions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Extensions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Serialization.Primitives 4.1.1" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Runtime.Serialization.Primitives 4.1.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Serialization.Primitives 4.1.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Runtime.Serialization.Primitives 4.1.1" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Runtime.Serialization.Primitives 4.1.1" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding.Extensions 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding.Extensions 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding.Extensions 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding.Extensions 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding.Extensions 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.Encoding.Extensions 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Text.RegularExpressions 4.1.0" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Threading 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Threading 4.0.11" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Threading 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Threading 4.0.11" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Threading 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Threading 4.0.11" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Threading.Tasks 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Threading.Tasks 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Threading.Tasks 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.Encoding.Extensions 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.RegularExpressions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.Encoding.Extensions 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Text.RegularExpressions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.ReaderWriter 4.0.11" Target="System.Threading.Tasks 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Xml.ReaderWriter 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Xml.ReaderWriter 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Collections 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Diagnostics.Debug 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Globalization 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.IO 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Reflection 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Resources.ResourceManager 4.0.1" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Runtime 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Runtime.Extensions 4.1.0" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Text.Encoding 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Threading 4.0.11" Category="Package Dependency" />
+    <Link Source="System.Xml.XDocument 4.0.11" Target="System.Xml.ReaderWriter 4.0.11" Category="Package Dependency" />
+    <Link Source="Lab04WSCallWebAPI" Target="Microsoft.AspNet.WebApi.Client 5.2.3" Category="Installed Package" />
+    <Link Source="Microsoft.AspNet.WebApi 5.0.0" Target="Microsoft.AspNet.WebApi.WebHost 5.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 5.0.0" Target="Newtonsoft.Json 5.0.6" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 5.0.0" Target="Newtonsoft.Json 5.0.6" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 5.0.0" Target="Microsoft.AspNet.WebApi.Client 5.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 5.0.0" Target="Microsoft.AspNet.WebApi.Core 5.0.0" Category="Package Dependency" />
+    <Link Source="Lab04WebAPIServices" Target="Microsoft.AspNet.WebApi 5.0.0" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Lab05.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab05"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <AppBar>
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnCreate" Content="Create" Height="65" Width="102" Click="btnCreate_Click"></Button>
+                    <Button x:Name="btnLogin" Content="Login" Height="65" Width="102" Click="btnLogin_Click"></Button>
+                </StackPanel>
+                <Button x:Name="btnClose" Content="Close" Height="65" Width="102" HorizontalAlignment="Right" Click="btnClose_Click"></Button>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <Grid Background="CadetBlue">
+        <Frame x:Name="mainFrame" Content="" HorizontalAlignment="Center" Height="677" Margin="10,81,10,10" VerticalAlignment="Center" Width="1346" Background="#FFC3BEBE" />
+    </Grid>
+</Page>

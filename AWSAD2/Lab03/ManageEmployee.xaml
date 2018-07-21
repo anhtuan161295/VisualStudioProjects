@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="Lab03.ManageEmployee"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="87" Margin="0,40,0,0" VerticalAlignment="Top" Width="540">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock TextWrapping="Wrap" Text="Manage Employee" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="95,232,0,0" TextWrapping="Wrap" Text="Employee Id" VerticalAlignment="Top" FontSize="24" />
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="261,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="378" />
+        <TextBlock HorizontalAlignment="Left" Margin="95,281,0,0" TextWrapping="Wrap" Text="Full Name" VerticalAlignment="Top" FontSize="24" />
+        <TextBox x:Name="txtFName" HorizontalAlignment="Left" Margin="261,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="378" />
+        <TextBlock HorizontalAlignment="Left" Margin="95,330,0,0" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Top" FontSize="24" />
+        <TextBox x:Name="txtUName" HorizontalAlignment="Left" Margin="261,315,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="378" />
+        <TextBlock HorizontalAlignment="Left" Margin="95,379,0,0" TextWrapping="Wrap" Text="Passcode" VerticalAlignment="Top" FontSize="24" />
+        <TextBox x:Name="txtPass" HorizontalAlignment="Left" Margin="261,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="378" />
+        <TextBlock HorizontalAlignment="Left" Margin="95,428,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontSize="24" />
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="261,413,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="378" />
+        <TextBlock HorizontalAlignment="Left" Margin="95,477,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontSize="24" />
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="261,462,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="378" />
+        <CheckBox x:Name="cbIsAdmin" Content="Is Admin" HorizontalAlignment="Left" Height="36" Margin="258,522,0,0" VerticalAlignment="Top" Width="132" FontSize="24" Padding="2,0,0,0" VerticalContentAlignment="Top" />
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Height="80" Margin="258,580,0,0" VerticalAlignment="Top" Width="328" FontSize="24" Click="btnCreate_Click" />
+        <GridView x:Name="gvEmployees" HorizontalAlignment="Left" Height="440" Margin="716,217,0,0" VerticalAlignment="Top" Width="615">
+            <GridView.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="#FFBD5353" Offset="1" />
+                </LinearGradientBrush>
+            </GridView.Background>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"></WrapGrid>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding img}" Width="100" Height="100" Stretch="Fill"></Image>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="FullName: " FontSize="22"></TextBlock>
+                            <TextBlock Text="{Binding FullName}" FontSize="22"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="Address: " FontSize="22"></TextBlock>
+                            <TextBlock Text="{Binding Address}" FontSize="22"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="Is Admin: " FontSize="22"></TextBlock>
+                            <TextBlock Text="{Binding IsAdmin}" FontSize="22"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <Button x:Name="btnBack" Content="Back to List" HorizontalAlignment="Left" Height="70" Margin="92,53,0,0" VerticalAlignment="Top" Width="249" FontSize="24" Click="btnBack_Click" />
+        <TextBlock x:Name="txtWelcome" HorizontalAlignment="Left" Margin="777,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Width="399" />
+    </Grid>
+</Page>

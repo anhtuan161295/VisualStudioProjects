@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Lab05WebRole.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PartitionKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RowKey)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Timestamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ETag)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.DisableCompiledSerializers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisablePropertyResolverCache)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartitionKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RowKey)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Timestamp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ETag)
+                </td>*@
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.DisableCompiledSerializers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisablePropertyResolverCache)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { partKey = item.PartitionKey, rowKey = item.RowKey }) |
+                @Html.ActionLink("Details", "Details", new { partKey = item.PartitionKey, rowKey = item.RowKey }) |
+                @Html.ActionLink("Delete", "Delete", new { partKey = item.PartitionKey, rowKey = item.RowKey })
+            </td>
+        </tr>
+    }
+</table>

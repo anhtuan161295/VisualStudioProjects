@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Demo01.Models.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="pull-right" style="width: 600px">
+
+    @using (Html.BeginForm("SearchItem", "Items", FormMethod.Post))
+    {
+        <div class="form-group form-inline">
+            @Html.TextBox("txtSearch", "", new { @class = "form-control" })
+
+            @*<input type="search" name="txtSearch" class="form-control" placeholder="Enter a keyword">*@
+            <select name="txtSearchType" class="form-control" style="width: 150px">
+                <option value="ICode">ICode</option>
+                <option value="ItemName">ItemName</option>
+                <option value="Rate">Rate</option>
+            </select>
+            <input type="submit" name="btnSearch" value="Filter" class="btn btn-primary" />
+        </div>
+    }
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ICode)
+            <a href="@Url.Action("Index", "Items", new {sortOrder = ViewBag.sortCode})">
+                <span>
+                    <span class="glyphicon glyphicon-arrow-down"></span>
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                </span>
+            </a>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemName)
+            <a href="@Url.Action("Index", "Items", new {sortOrder = ViewBag.sortName})">
+                <span>
+                    <span class="glyphicon glyphicon-arrow-down"></span>
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                </span>
+            </a>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rate)
+            <a href="@Url.Action("Index", "Items", new {sortOrder = ViewBag.sortRate  })">
+                <span>
+                    <span class="glyphicon glyphicon-arrow-down"></span>
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                </span>
+            </a>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ICode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ICode }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ICode }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ICode })
+            </td>
+        </tr>
+    }
+</table>
+<div>
+    <h4>@Html.ActionLink("Export to PDF", "exportItem", "Items")</h4>
+</div>

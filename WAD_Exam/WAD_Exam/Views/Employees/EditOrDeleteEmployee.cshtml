@@ -1,0 +1,71 @@
+﻿@model WAD_Exam.Models.Employees
+
+@{
+    ViewBag.Title = "Edit Or Delete Employee";
+}
+
+<h2>Edit Or Delete Employee</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Employees</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*@Html.HiddenFor(model => model.EmpID)*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmpID) <br />
+
+            @Html.EditorFor(model => model.EmpID)
+            @Html.ValidationMessageFor(model => model.EmpID, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmpDoB) <br />
+
+            @Html.EditorFor(model => model.EmpDoB)
+            @Html.ValidationMessageFor(model => model.EmpDoB, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmpName) <br />
+
+            @Html.EditorFor(model => model.EmpName)
+            @Html.ValidationMessageFor(model => model.EmpName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmpAddress) <br />
+
+            @Html.EditorFor(model => model.EmpAddress)
+            @Html.ValidationMessageFor(model => model.EmpAddress, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmpEmail) <br />
+
+            @Html.EditorFor(model => model.EmpEmail)
+            @Html.ValidationMessageFor(model => model.EmpEmail, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+
+            <input type="submit" name="command" value="Save" class="btn btn-success" />
+
+            <input type="submit" name="command" value="Remove" class="btn btn-link" />
+        </div>
+    </div>
+}
+
+<h4><b>@ViewBag.Msg</b></h4>
+
+<div>
+    @Html.ActionLink("Back to List", "ViewEmployeeList")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

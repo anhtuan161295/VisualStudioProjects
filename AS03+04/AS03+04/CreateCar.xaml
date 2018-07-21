@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="AS03_04.CreateCar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AS03_04"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas HorizontalAlignment="Center" Height="429" Margin="418,81,417,258" VerticalAlignment="Center" Width="531">
+            <TextBlock Canvas.Left="77" TextWrapping="Wrap" Text="Made" Canvas.Top="76" FontSize="24" />
+            <TextBox x:Name="txtMade" Canvas.Left="244" TextWrapping="Wrap" Text="" Canvas.Top="73" Width="150" Height="28" />
+            <TextBlock Canvas.Left="77" TextWrapping="Wrap" Text="Model" Canvas.Top="110" FontSize="24" />
+            <TextBox x:Name="txtAddon" Canvas.Left="244" TextWrapping="Wrap" Text="" Canvas.Top="141" Width="150" Height="28" />
+            <TextBlock Canvas.Left="77" TextWrapping="Wrap" Text="Addon" Canvas.Top="144" FontSize="24" />
+            <TextBlock Canvas.Left="77" TextWrapping="Wrap" Text="YearOfReg" Canvas.Top="178" FontSize="24" />
+            <TextBlock Canvas.Left="77" TextWrapping="Wrap" Text="RentPerDay" Canvas.Top="212" FontSize="24" />
+            <TextBox x:Name="txtRentPerDay" Canvas.Left="244" TextWrapping="Wrap" Text="" Canvas.Top="209" Width="150" Height="28" />
+            <TextBox x:Name="txtYearOfReg" Canvas.Left="244" TextWrapping="Wrap" Text="" Canvas.Top="175" Width="150" Height="28" />
+            <TextBox x:Name="txtModel" Canvas.Left="244" TextWrapping="Wrap" Text="" Canvas.Top="107" Width="150" Height="28" />
+            <TextBlock Canvas.Left="196" TextWrapping="Wrap" Text="Create Car" Canvas.Top="10" FontSize="36" RenderTransformOrigin="2.275,-0.948" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Button x:Name="btnCreate" Content="Create" Canvas.Left="219" Canvas.Top="267" RenderTransformOrigin="-0.156,0.079" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnCreate_Click" />
+        </Canvas>
+        <Button x:Name="btnBack" Content="Back" Click="btnBack_Click" Margin="0,512,0,218" HorizontalAlignment="Center" />
+    </Grid>
+</Page>

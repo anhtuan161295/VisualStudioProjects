@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Lab02WebClient.Models.News>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShortContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfPublisher)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShortContent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Photo)*@
+                <img src="@item.Photo" width="100" height="100" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfPublisher)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.NewsId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.NewsId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.NewsId })
+            </td>
+        </tr>
+    }
+</table>

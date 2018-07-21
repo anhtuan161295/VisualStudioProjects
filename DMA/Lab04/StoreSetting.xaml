@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Lab04.StoreSetting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBlock Text="Setting" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Game Title" VerticalAlignment="Top" FontSize="24" />
+            <TextBox x:Name="txtTitle" HorizontalAlignment="Left" Height="72" Margin="0,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" FontSize="24" />
+            <TextBlock HorizontalAlignment="Left" Margin="10,107,0,0" TextWrapping="Wrap" Text="Year of Release" VerticalAlignment="Top" FontSize="24" />
+            <TextBox x:Name="txtYear" HorizontalAlignment="Left" Height="72" Margin="0,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" FontSize="24" />
+            <TextBlock HorizontalAlignment="Left" Margin="10,205,0,0" TextWrapping="Wrap" Text="Unit Price" VerticalAlignment="Top" FontSize="24" />
+            <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="72" Margin="0,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" FontSize="24" />
+            <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="31,341,0,0" VerticalAlignment="Top" Width="186" Click="btnSave_Click" />
+            <Button x:Name="btnView" Content="View" HorizontalAlignment="Left" Margin="245,341,0,0" VerticalAlignment="Top" Width="186" Click="btnView_Click" />
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

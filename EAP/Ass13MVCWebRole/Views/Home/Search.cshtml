@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Ass13MVCWebRole.Models.NoteBook>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = null;
+}
+
+<h2 style="color: darkred">Search Notebook</h2>
+
+<h4>Please enter condition to Search</h4>
+
+@using (Html.BeginForm("Search", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    <table>
+        <tr>
+            <td><label>From Price: </label></td>
+            <td><input type="text" name="txtFromPrice" /></td>
+        </tr>
+        <tr>
+            <td><label>To Price: </label></td>
+            <td><input type="text" name="txtToPrice" /></td>
+        </tr>
+        <tr>
+            @Html.CheckBox("txtWifi") Have WIFI
+            @* <td><input type="checkbox" name="txtWifi" /> Have WIFI </td>*@
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" name="Search" value="Search" width="200" /></td>
+        </tr>
+    </table>
+
+}

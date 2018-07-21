@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Lab01.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Of Students</h2>
+<p>
+    @Html.ActionLink("Create New Student", "Create", "Student")
+</p>
+
+@using (Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Student Address</th>
+            <th>Student Email</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr class="col">
+                <td>@item.StudentId</td>
+                <td>@item.StudentName</td>
+                <td>@item.Address</td>
+                <td>@item.Email</td>
+                <td>@Html.ActionLink("Details", "Details", new { id = item.StudentId })</td>
+                <td>@Html.ActionLink("DeleteWithoutConfirm", "DeleteWithoutConfirm", new { id = item.StudentId })</td>
+                <td>@Html.ActionLink("DeleteWithConfirm", "DeleteWithConfirm", new { id = item.StudentId })</td>
+
+                @*@{
+                    if (item.StudentId == 1)
+                    {
+                        <td>@Html.ActionLink("DeleteWithoutConfirm", "DeleteWithoutConfirm", new { id = item.StudentId })</td>
+
+                    }
+                    else
+                    {
+                        <td>@Html.ActionLink("DeleteWithConfirm", "DeleteWithConfirm", new { id = item.StudentId })</td>
+                    }
+                        }*@
+            </tr>
+        }
+    </table>
+}

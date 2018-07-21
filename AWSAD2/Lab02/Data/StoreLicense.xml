@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CurrentApp>
+  <ListingInformation>
+    <!--Khai bao thong tin cho ung dung -->
+    <App>
+      <AppId>d25517cb-12d4-4699-8bdc-52040c712cab</AppId>
+      <LinkUri> http://apps.microsoft.com/webpdp/app/d25517cb-12d4-4699-8bdc-52040c712cab </LinkUri>
+      <!--Khai bao thong tin cho windows store-->
+      <CurrentMarket>en-US</CurrentMarket>
+      <AgeRating>3</AgeRating>
+      <MarketData xml:lang="en-us">
+        <Name>LicenseTest</Name>
+        <Description>Will check the license info</Description>
+        <Price>10.00</Price>
+        <CurrencySymbol>$</CurrencySymbol>
+        <CurrencyCode>USD</CurrencyCode>
+      </MarketData>
+    </App>
+    <!--Khai bao thong tin cho san pham -->
+    <Product ProductId="P001" LicenseDuration="0">
+      <MarketData xml:lang="en-us">
+        <Name>Contra Game</Name>
+        <Price>10.00</Price>
+        <CurrencySymbol>$</CurrencySymbol>
+        <CurrencyCode>USD</CurrencyCode>
+      </MarketData>
+    </Product>
+  </ListingInformation>
+  <!--Khai bao thong tin license-->
+  <LicenseInformation>
+    <App>
+      <IsActive>true</IsActive>
+      <IsTrial>true</IsTrial>
+      <ExpirationDate>2016-07-30T09:00:00.00Z</ExpirationDate>
+    </App>
+  </LicenseInformation>
+</CurrentApp>

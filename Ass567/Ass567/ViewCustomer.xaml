@@ -1,0 +1,106 @@
+﻿<Page
+    x:Class="Ass567.ViewCustomer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ass567"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="64" Margin="0,70,0,0" VerticalAlignment="Top" Width="506">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock TextWrapping="Wrap" Text="View Customer" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+        </Border>
+        <Canvas HorizontalAlignment="Center" Height="483" Margin="0,169,0,0" VerticalAlignment="Top" Width="1346">
+            <GridView x:Name="gvListUser" HorizontalAlignment="Left" Height="295" VerticalAlignment="Top" Width="436" Canvas.Left="123" Canvas.Top="31" SelectionChanged="gvListUser_SelectionChanged">
+                <GridView.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#FF0A5D6A" Offset="1" />
+                    </LinearGradientBrush>
+                </GridView.Background>
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"></WrapGrid>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+                <GridView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Background="Chocolate">
+                            <TextBlock Text="List of User" FontSize="24" HorizontalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.HeaderTemplate>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Username}"></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+            <GridView x:Name="gvCustomerDetails" HorizontalAlignment="Left" Height="295" VerticalAlignment="Top" Width="449" Canvas.Left="775" Canvas.Top="31">
+                <GridView.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#FF741C1C" Offset="1" />
+                    </LinearGradientBrush>
+                </GridView.Background>
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"></WrapGrid>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+                <GridView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Background="Chocolate">
+                            <TextBlock Text="Customer Details" FontSize="24" HorizontalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.HeaderTemplate>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Fullname: "></TextBlock>
+                                <TextBlock Text="{Binding Fullname}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Username: "></TextBlock>
+                                <TextBlock Text="{Binding Username}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Password: "></TextBlock>
+                                <TextBlock Text="{Binding Password}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Address: "></TextBlock>
+                                <TextBlock Text="{Binding Address}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Phone: "></TextBlock>
+                                <TextBlock Text="{Binding Phone}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Email: "></TextBlock>
+                                <TextBlock Text="{Binding Email}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Is Admin: "></TextBlock>
+                                <TextBlock Text="{Binding IsAdmin}"></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Canvas>
+    </Grid>
+</Page>

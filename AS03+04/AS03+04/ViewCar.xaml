@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="AS03_04.ViewCar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AS03_04"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas x:Name="cvsCarInfo" HorizontalAlignment="Center" Height="374" Margin="0,65,0,329" VerticalAlignment="Center" Width="624" Visibility="Collapsed">
+            <TextBlock Canvas.Left="159" TextWrapping="Wrap" Text="Made" Canvas.Top="78" FontSize="24" />
+            <TextBlock Canvas.Left="159" TextWrapping="Wrap" Text="Addon" Canvas.Top="146" FontSize="24" />
+            <TextBlock Canvas.Left="159" TextWrapping="Wrap" Text="Model" Canvas.Top="112" FontSize="24" />
+            <TextBlock Canvas.Left="159" TextWrapping="Wrap" Text="YearOfReg" Canvas.Top="180" FontSize="24" />
+            <TextBlock Canvas.Left="159" TextWrapping="Wrap" Text="RentPerDay" Canvas.Top="214" FontSize="24" />
+            <TextBlock x:Name="txtMade" Canvas.Left="332" TextWrapping="Wrap" Text="Text" Canvas.Top="78" FontSize="24" />
+            <TextBlock x:Name="txtAddon" Canvas.Left="332" TextWrapping="Wrap" Text="Text" Canvas.Top="146" FontSize="24" />
+            <TextBlock x:Name="txtModel" Canvas.Left="332" TextWrapping="Wrap" Text="Text" Canvas.Top="112" FontSize="24" />
+            <TextBlock x:Name="txtYearOfReg" Canvas.Left="332" TextWrapping="Wrap" Text="Text" Canvas.Top="180" FontSize="24" />
+            <TextBlock x:Name="txtRentPerDay" Canvas.Left="332" TextWrapping="Wrap" Text="Text" Canvas.Top="214" FontSize="24" />
+            <TextBlock Canvas.Left="196" TextWrapping="Wrap" Text="Car Information" Canvas.Top="21" FontSize="36" />
+        </Canvas>
+        <Button x:Name="btnBack" Content="Back" Click="btnBack_Click" HorizontalAlignment="Center" RenderTransformOrigin="0.405,0.866" Margin="0,441,0,289" />
+        <Canvas x:Name="cvsNoCar" HorizontalAlignment="Center" Height="374" Margin="0,65,0,329" VerticalAlignment="Center" Width="624" Visibility="Collapsed">
+            <TextBlock Canvas.Left="189" TextWrapping="Wrap" Text="No Car Available" Canvas.Top="156" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Canvas>
+    </Grid>
+</Page>
